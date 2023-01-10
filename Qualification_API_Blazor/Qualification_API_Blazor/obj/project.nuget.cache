@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gM17phB5PBiYpUy2IbQUL2kHHv+07/5mKc1iraJBiE2BFwESGfkHhERrSM4yyvB4BvLAR+uLhwno9YPdh5czCA==",
+  "dgSpecHash": "rfDp2qOCdcrUrbLLw2nZ/qeANAaZCpnM+e7jMSNZeXEfH3mdGdjVc06oHCGK9drIBLsTd2RjrKiN8yNj9dVzXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\majas\\source\\repos\\Qualification_assignment\\Qualification_API_Blazor\\Qualification_API_Blazor\\Qualification_API_Blazor.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\majas\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\majas\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\7.0.1\\microsoft.aspnetcore.authentication.negotiate.7.0.1.nupkg.sha512",
     "C:\\Users\\majas\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.1\\microsoft.aspnetcore.connections.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\majas\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
