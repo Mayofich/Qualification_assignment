@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "gM17phB5PBiYpUy2IbQUL2kHHv+07/5mKc1iraJBiE2BFwESGfkHhERrSM4yyvB4BvLAR+uLhwno9YPdh5czCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\majas\\source\\repos\\Qualification_assignment\\Qualification_API_Blazor\\Qualification_API_Blazor\\Qualification_API_Blazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\majas\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\7.0.1\\microsoft.aspnetcore.authentication.negotiate.7.0.1.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.1\\microsoft.aspnetcore.connections.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\microsoft.extensions.features\\7.0.1\\microsoft.extensions.features.7.0.1.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\system.directoryservices.protocols\\7.0.0\\system.directoryservices.protocols.7.0.0.nupkg.sha512",
+    "C:\\Users\\majas\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
