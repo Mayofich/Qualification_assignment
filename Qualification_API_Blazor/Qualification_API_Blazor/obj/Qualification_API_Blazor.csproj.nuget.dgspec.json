@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.Authentication.Negotiate": {
               "target": "Package",
               "version": "[7.0.1, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             }
           },
           "imports": [

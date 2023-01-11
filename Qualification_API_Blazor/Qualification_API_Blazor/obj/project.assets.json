@@ -176,6 +176,22 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Npgsql/7.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.DirectoryServices.Protocols/7.0.0": {
         "type": "package",
         "compile": {
@@ -507,6 +523,31 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Npgsql/7.0.1": {
+      "sha512": "+s2gUPA37wDy9B3mE7ZN8xhfnSrf56OCR8ELMZkEbNxk9MyWS54o7ttrngmu7s7/C2ldjAWMdggkpMMPCZsKSg==",
+      "type": "package",
+      "path": "npgsql/7.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Npgsql.dll",
+        "lib/net5.0/Npgsql.xml",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/net7.0/Npgsql.dll",
+        "lib/net7.0/Npgsql.xml",
+        "lib/netcoreapp3.1/Npgsql.dll",
+        "lib/netcoreapp3.1/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.7.0.1.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "System.DirectoryServices.Protocols/7.0.0": {
       "sha512": "QNC4ab+Gc3p3uLixavxxD0h5FOxrs2cT3hez4DSMckBU8lgREjrEB5a8reJypkSVlhFyUQ5YfpMJODdeSCYp2g==",
       "type": "package",
@@ -574,7 +615,8 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Dapper >= 2.0.123",
-      "Microsoft.AspNetCore.Authentication.Negotiate >= 7.0.1"
+      "Microsoft.AspNetCore.Authentication.Negotiate >= 7.0.1",
+      "Npgsql >= 7.0.1"
     ]
   },
   "packageFolders": {
@@ -621,6 +663,10 @@
             "version": "[2.0.123, )"
           },
           "Microsoft.AspNetCore.Authentication.Negotiate": {
+            "target": "Package",
+            "version": "[7.0.1, )"
+          },
+          "Npgsql": {
             "target": "Package",
             "version": "[7.0.1, )"
           }
