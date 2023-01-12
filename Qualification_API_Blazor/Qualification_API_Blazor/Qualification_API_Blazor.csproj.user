@@ -3,9 +3,4 @@
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Update="Adapters\StrojAdapter.cs">
-      <SubType>Component</SubType>
-    </Compile>
-  </ItemGroup>
 </Project>

@@ -7,7 +7,7 @@ using Qualification_API_Blazor.Models;
 
 namespace Qualification_API_Blazor.Adapters
 {
-    public class StrojAdapter : DataAdapter
+    public class StrojAdapter : DataAdaptor
     {
         private readonly IStrojService _StrojService;
 
@@ -16,26 +16,26 @@ namespace Qualification_API_Blazor.Adapters
             _StrojService = StrojService;
         }
 
-        public async Task<object> ReadAsync(DataManagerRequest dataManagerRequest, string key = null)
+        public override async Task<object> ReadAsync(DataManagerRequest dataManagerRequest, string key)
         {
             List<Stroj> strojevi = await _StrojService.GetStrojList();
             int count = strojevi.Count;
             return dataManagerRequest.RequiresCounts ? new DataResult() { Result = strojevi, Count = count } : count;
         }
 
-        public async Task<object> InsertAsync(DataManager dataManager, object data, string key)
+        public override async Task<object> InsertAsync(DataManager dataManager, object data, string key)
         {
             await _StrojService.CreateStroj(data as Stroj);
             return data;
         }
 
-        public async Task<object> RemoveAsync(DataManager dataManager, object data, string keyField, string key)
+        public override async Task<object> RemoveAsync(DataManager dataManager, object data, string keyField, string key)
         {
             await _StrojService.DeleteStroj(Convert.ToInt32(data));
             return keyField;
         }
 
-        public async Task<object> UpdateAsync(DataManager dataManager, object data, string keyField, string key)
+        public override async Task<object> UpdateAsync(DataManager dataManager, object data, string keyField, string key)
         {
             await _StrojService.UpdateStroj(data as Stroj);
             return data;

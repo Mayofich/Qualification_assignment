@@ -3,6 +3,6 @@
     public class Stroj
     {
         public int ID { get; set; }
-        public string NAZIV_STROJA { get; set; } = default!;
+        public string NAZIV_STROJA { get; set; }
     }
 }
