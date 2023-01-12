@@ -46,11 +46,19 @@
             },
             "Microsoft.AspNetCore.Authentication.Negotiate": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[7.0.2, )"
             },
             "Npgsql": {
               "target": "Package",
               "version": "[7.0.1, )"
+            },
+            "Syncfusion.Blazor.Grid": {
+              "target": "Package",
+              "version": "[20.4.0.43, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[20.4.0.43, )"
             }
           },
           "imports": [

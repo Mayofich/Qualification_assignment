@@ -1,4 +1,7 @@
 ﻿@page "/"
+@using Qualification_API_Blazor.Services;
+@using Qualification_API_Blazor.Models;
+@using Qualification_API_Blazor.Adapters;
 
 <PageTitle>Index</PageTitle>
 
@@ -7,3 +10,12 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<SfGrid TValue="Stroj" ID="Grid" Toolbar="@(new List<string>() {"Add", "Delete", "Update", "Cancel"})">
+ <SfDataManager AdaptorInstance="typeof(StrojAdapter)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
+ <GridEditSettings AllowEditing="true" AllowDeleting="true" AllowAdding="true" Mode="@EditMode.Normal"></GridEditSettings>
+ <GridColumns>
+   <GridColumn Field="@nameof(Stroj.ID)" Width="50" IsPrimaryKey="true"></GridColumn>
+   <GridColumn Field="@nameof(Stroj.NAZIV_STROJA)" Width="100"></GridColumn>
+ </GridColumns>
+</SfGrid>

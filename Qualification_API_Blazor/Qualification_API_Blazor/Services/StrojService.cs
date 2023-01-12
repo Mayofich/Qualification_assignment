@@ -25,33 +25,13 @@ namespace Qualification_API_Blazor.Services
         public async Task<Stroj> UpdateStroj(Stroj stroj)
         {
             var updateStroj = await _dbService.Update<int>("Update public.Stroj SET name=@Name, age=@Age, address=@Address, mobile_number=@MobileNumber WHERE id=@Id", stroj);
-            return Stroj;
+            return stroj;
         }
 
         public async Task<bool> DeleteStroj(int key)
         {
             var deleteStroj = await _dbService.Delete<int>("DELETE FROM public.Stroj WHERE id=@Id", new { id = key });
             return true;
-        }
-
-        public Task<bool> CreateStroj(Stroj stroj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<Stroj>> GetStrojList()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Stroj> UpdateStroj(Stroj stroj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> DeleteStroj(int key)
-        {
-            throw new NotImplementedException();
         }
     }
 }
