@@ -10,7 +10,7 @@ using System.Data;
 
         public DbService(IConfiguration config)
         {
-            _db = new NpgsqlConnection(config.GetConnectionString("Employeedb"));
+            _db = new NpgsqlConnection(config.GetConnectionString("STROJEVI"));
         }
 
         public async Task<T> GetAsync<T>(string command, object parms)
