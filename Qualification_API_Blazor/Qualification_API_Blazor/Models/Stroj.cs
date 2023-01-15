@@ -2,7 +2,7 @@
 {
     public class Stroj
     {
-        public int ID { get; set; }
+        public int ID_STROJA { get; set; }
         public string? NAZIV_STROJA { get; set; }
     }
 }

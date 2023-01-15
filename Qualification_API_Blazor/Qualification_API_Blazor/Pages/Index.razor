@@ -10,54 +10,6 @@
 <PageTitle>Index</PageTitle>
 
 <h1>Hello, world!</h1>
-@code{
-    public class DbService : IDbService
-    {
-        private readonly IDbConnection _db;
-
-        public DbService(IConfiguration config)
-        {
-            _db = new NpgsqlConnection(config.GetConnectionString("STROJEVI"));
-            Console.WriteLine("radi");
-        }
-
-        public async Task<T> GetAsync<T>(string command, object parms)
-        {
-            T result;
-            result = (await _db.QueryAsync<T>(command, parms).ConfigureAwait(false)).FirstOrDefault();
-            return result;
-        }
-
-        public async Task<List<T>> GetAll<T>(string command, object parms)
-        {
-            List<T> result = new List<T>();
-            result = (await _db.QueryAsync<T>(command, parms)).ToList();
-            return result;
-        }
-
-        public async Task<T> Insert<T>(string command, object parms)
-        {
-            T result;
-            result = _db.Query<T>(command, parms).FirstOrDefault();
-            return result;
-        }
-
-        public async Task<T> Update<T>(string command, object parms)
-        {
-            T result;
-            result = _db.Query<T>(command, parms).FirstOrDefault();
-            return result;
-        }
-
-        public async Task<T> Delete<T>(string command, object parms)
-        {
-            T result;
-            result = _db.Query<T>(command, parms).FirstOrDefault();
-            return result;
-        }
-    }
-}
-
 
 Welcome to your new app.
 
@@ -67,7 +19,7 @@ Welcome to your new app.
  <SfDataManager AdaptorInstance="typeof(StrojAdapter)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
  <GridEditSettings AllowEditing="true" AllowDeleting="true" AllowAdding="true" Mode="@EditMode.Normal"></GridEditSettings>
  <GridColumns>
-   <GridColumn Field="@nameof(Stroj.ID)" Width="50" IsPrimaryKey="true"></GridColumn>
+   <GridColumn Field="@nameof(Stroj.ID_STROJA)" Width="50" IsPrimaryKey="true"></GridColumn>
    <GridColumn Field="@nameof(Stroj.NAZIV_STROJA)" Width="100"></GridColumn>
  </GridColumns>
 </SfGrid>
