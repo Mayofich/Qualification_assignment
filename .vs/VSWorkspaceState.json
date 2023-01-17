@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Qualification_API_Blazor",
+    "\\Qualification_API_Blazor\\Qualification_API_Blazor",
+    "\\Qualification_API_Blazor\\Qualification_API_Blazor\\Pages"
   ],
-  "SelectedNode": "\\C:\\Users\\majas\\Source\\Repos\\Qualification_assignment",
+  "SelectedNode": "\\Qualification_API_Blazor\\Qualification_API_Blazor\\Pages\\Index.razor",
   "PreviewInSolutionExplorer": false
 }
