@@ -20,7 +20,7 @@ builder.Services.AddSyncfusionBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<IDbService, DbService>();
 builder.Services.AddScoped<IStrojService, StrojService>();
-builder.Services.AddScoped<StrojAdapter>();
+builder.Services.AddScoped<StrojAdaptor>();
 builder.Services.AddAuthorization(options =>
 {
     // By default, all incoming requests will be authorized according to the default policy.

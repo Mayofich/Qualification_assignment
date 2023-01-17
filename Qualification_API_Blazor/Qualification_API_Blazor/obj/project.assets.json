@@ -1823,6 +1823,7 @@
       "Dapper >= 2.0.123",
       "Microsoft.AspNetCore.Authentication.Negotiate >= 7.0.2",
       "Npgsql >= 7.0.1",
+      "Syncfusion.Blazor.Data >= 20.4.0.43",
       "Syncfusion.Blazor.Grid >= 20.4.0.43",
       "Syncfusion.Blazor.Themes >= 20.4.0.43"
     ]
@@ -1877,6 +1878,10 @@
           "Npgsql": {
             "target": "Package",
             "version": "[7.0.1, )"
+          },
+          "Syncfusion.Blazor.Data": {
+            "target": "Package",
+            "version": "[20.4.0.43, )"
           },
           "Syncfusion.Blazor.Grid": {
             "target": "Package",
